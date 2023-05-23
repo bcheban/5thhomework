@@ -2,21 +2,22 @@ body {
     font-family: "Roboto", sans-serif;
     font-style: normal;
   }
-  
   ul,
-  h1,
   h2,
   h3,
   p {
     padding: 0;
     margin: 0;
   }
-  
   ul {
-    list-style: none;
+    list-style-type: none;
   }
   a {
     text-decoration: none;
+  }
+  img,
+  button {
+    display: block;
   }
   
   .container {
@@ -24,6 +25,9 @@ body {
     margin: 0 auto;
   }
 
+  header {
+    border-bottom: 2px solid #ececec;
+  }
   .header-wraper {
     width: 1200px;
     display: flex;
@@ -85,152 +89,87 @@ body {
     letter-spacing: 0.02em;
     color: #757575;
   }
+
   .contacts-link:hover,
   .contacts-link:focus {
     color: #2196f3;
   }
   
-  .hero {
-    background: #2f303a;
-    padding: 200px 0;
+  .content {
+    width: 1200px;
+    margin: 94px auto;
   }
   
-  .hero-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 30px;
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    width: 575px;
+    height: 54px;
+    margin: 0 auto 34px;
   }
-  
-  .hero-btn {
-    display: block;
-    margin: 0 auto;
-    width: 216px;
-    height: 50px;
-    background: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  .btn-filter {
+    height: 38px;
+    background: #f5f4fa;
     border-radius: 4px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.88;
+    line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.03em;
+    color: #212121;
+    padding: 6px 22px;
+    border: none;
+  }
+
+  .btn-filter:hover,
+  .btn-filter:focus {
+    background-color: #2196f3;
     color: #ffffff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
   }
   
-  .features {
-    padding: 94px 0;
-  }
-
-  .features-list {
+  .project-list {
     display: flex;
-    justify-content: space-between;
-    width: 1200px;
-    margin: 0 auto;
-  }
-
-  .features-list-item {
-    width: 270px;
-  }
-
-  .features-subtitle {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #212121;
-    margin-bottom: 10px;
-  }
-
-  .features-paragr {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
-  }
-  
-  .work {
-    padding-bottom: 94px;
-  }
-
-  .work-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-  }
-
-  .work-list {
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
-    margin: 50px auto 0;
-  }
-
-  .work-list-img {
-    width: 370px;
-    height: 294px;
-  }
-  
-  .team {
-    background: #f5f4fa;
-    padding: 94px 215px;
-  }
-
-  .team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    margin-bottom: 50px;
-  }
-
-  .team-list {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .team-member {
-    background: #ffffff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    padding-bottom: 30px;
-  }
-
-  .team-list-img {
-    width: 270px;
-    height: 260px;
+  .project-list-item:not(:nth-child(n + 7)) {
     margin-bottom: 30px;
   }
 
-  .team-list-title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    margin-bottom: 10px;
+  .project-card {
+    width: 370px;
+    height: 404px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
   }
 
-  .team-list-paragr {
+  .project-img {
+    width: 370px;
+    height: 294px;
+  }
+
+  .card-text {
+    padding: 20px 24px;
+  }
+
+  .project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+  }
+
+  .project-text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
+    line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
   }
