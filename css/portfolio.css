@@ -228,13 +228,13 @@ body {
     margin-bottom: 9px;
   }
 
-  .footer-second {
+  .second-footer {
     padding-top: 12px;
     width: 206px;
     margin-right: 93px;
   }
   
-  .footer-join-title {
+  .footer-join{
     color: #fff;
     font-size: 14px;
     font-weight: 700;
@@ -243,13 +243,13 @@ body {
     margin-bottom: 20px;
   }
   
-  .join-list {
+  .footer-list{
     display: flex;
     justify-content: space-between;
     width: 206px;
   }
   
-  .join-list__item {
+  .footer-list-items {
     width: 44px;
     height: 44px;
     display: flex;
@@ -259,11 +259,11 @@ body {
     border-radius: 50%;
   }
   
-  .join-list__item:hover {
+  .footer-list-items:hover {
     background-color: #2196f3;
   }
   
-  .join-socials {
+  .footer-icons {
     width: 20px;
     height: 20px;
     fill: #ffffff;
