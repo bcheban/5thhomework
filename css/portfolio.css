@@ -184,27 +184,30 @@ body {
     color: #757575;
   }
   
-  footer {
-    background: #2f303a;
-  }
-
   .footer {
-    padding: 60px 0 60px 215px;
+    background-color: #2f303a;
+    padding: 60px 0;
+    padding-left: 215px;
   }
-
+  
+  .footer-container {
+    display: flex;
+  }
+  .first-footer {
+    width: 231px;
+    margin-right: 70px;
+  }
+  
   .footer .logo-link {
     display: block;
     margin-bottom: 20px;
   }
-
   .studio {
     color: #ffffff;
   }
-
   address {
     font-style: normal;
   }
-
   .address-link {
     display: block;
     font-weight: 400;
@@ -214,7 +217,6 @@ body {
     color: #ffffff;
     margin-bottom: 9px;
   }
-
   .contact-link {
     display: block;
     font-weight: 400;
@@ -223,18 +225,17 @@ body {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
-  
   .contact-link:not(:last-child) {
     margin-bottom: 9px;
   }
-
+  
   .second-footer {
     padding-top: 12px;
     width: 206px;
     margin-right: 93px;
   }
   
-  .footer-join{
+  .join-text {
     color: #fff;
     font-size: 14px;
     font-weight: 700;
@@ -243,13 +244,13 @@ body {
     margin-bottom: 20px;
   }
   
-  .footer-list{
+  .join-list {
     display: flex;
     justify-content: space-between;
     width: 206px;
   }
   
-  .footer-list-items {
+  .join-list-item {
     width: 44px;
     height: 44px;
     display: flex;
@@ -259,11 +260,11 @@ body {
     border-radius: 50%;
   }
   
-  .footer-list-items:hover {
+  .join-list-item:hover {
     background-color: #2196f3;
   }
   
-  .footer-icons {
+  .join-social-media {
     width: 20px;
     height: 20px;
     fill: #ffffff;
