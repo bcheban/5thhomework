@@ -1,3 +1,3 @@
 # webstudio
 
-This is my repository.
+This is my repository. I store my code.
