@@ -397,7 +397,10 @@ body {
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    fill: #afb1b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
 
   .customers-list-item:hover {
@@ -405,7 +408,7 @@ body {
   }
 
   .customers-icons {
-    padding: 16px 32px 16px 32px;
+    fill: #AFB1B8;
   }
 
   .customers-list-item:hover .customers-icons {
