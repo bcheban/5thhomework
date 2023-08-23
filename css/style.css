@@ -90,7 +90,6 @@ body {
   .nav-list-link:hover,
   .nav-list-link:focus {
     color: #2196f3;
-    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .contacts-link {
@@ -103,7 +102,7 @@ body {
   .contacts-link:hover,
   .contacts-link:focus {
     color: #2196f3;
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .contact {
@@ -114,7 +113,7 @@ body {
 
   .contacts-link:hover .contact {
     fill: #2196F3;
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .hero {
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img.hero.svg");
@@ -151,11 +150,11 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: #ffffff;
+    transition: transform 500ms ease;
   }
 
   .hero-btn:hover {
     transform: scale(1.1);
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .features {
@@ -171,6 +170,7 @@ body {
 
   .features-list-item {
     width: 270px;
+    transition: transform 500ms ease;
   }
 
   .features-list-item::before {
@@ -203,7 +203,6 @@ body {
 
   .features-list-item:hover {
     transform: scale(1.1);
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .features-subtitle {
     font-weight: 700;
@@ -241,6 +240,7 @@ body {
     justify-content: space-between;
     width: 1200px;
     margin: 50px auto 0;
+    transition: transform 500ms ease;
   }
 
   .work-list-img {
@@ -253,6 +253,7 @@ body {
     justify-content: space-between;
     margin-top: 50px;
     position: relative;
+    
   }
   
   .thumb:nth-child(n)::after {
@@ -287,9 +288,11 @@ body {
     content: "Дизайнерські рішення";
   }
   
+  .thumb {
+    transition: transform 500ms ease;
+  }
   .thumb:hover {
     transform: scale(1.1);
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .work-list-img {
@@ -326,9 +329,12 @@ body {
     padding-bottom: 30px;
   }
 
-  .team-member:hover {
-    transform: scale(1.1);
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .team-list-item {
+    transition: transform 500ms ease;
+  }
+  .team-list-item:hover {
+    transform: scale(1.1)
   }
 
   .team-list-img {
@@ -371,6 +377,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 500ms ease;
   }
 
   .social-media-icons {
@@ -383,7 +390,6 @@ body {
     background-color: #2196f3;
     border-radius: 50%;
     transform: scale(1.1);
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .contacts-list-item:hover .social-media-icons {
     fill: #ffffff;
@@ -418,12 +424,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 500ms ease;
   }
 
   .customers-list-item:hover {
     border: 1px solid #2196F3;
     transform: scale(1.1);
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .customers-icons {
@@ -507,12 +513,12 @@ body {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    transition: transform 500ms ease;
   }
   
   .join-list-item:hover {
     background-color: #2196f3;
     transform: scale(1.1);
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .join-social-media {
