@@ -8,6 +8,8 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="./css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   </head>
 
   <body>
@@ -16,7 +18,7 @@
         <div class="header-wraper">
           <nav>
             <div class="header-left">
-              <a class="logo-link">
+              <a  href="./index.html" class="logo-link">
                 <span class="web">Web</span>Studio</a>
                 <ul class="nav-list">
                 <li>
@@ -51,8 +53,8 @@
       </header>
 
         <main>
-        <section class="hero">
-          <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
+        <section class="hero" data-aos="fade-down">
+          <h1 class="hero-title animate__tada animate__animated">Ефективні рішення для <br> вашого бізнесу</h1>
           <button class="hero-btn" type="button" data-modal-open >Замовити послугу</button>
         </section>
 
@@ -389,7 +391,12 @@
             </div>
             </div>
             <script src="./js/modal.js">
+              </script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
               
+            </script>
+            <script>
+              AOS.init();
             </script>
   </body>
 </html>

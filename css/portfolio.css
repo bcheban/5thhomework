@@ -56,7 +56,49 @@ body {
     line-height: 1.19;
     color: #212121;
     letter-spacing: 0.03em;
+    animation: change-color 2s linear infinite;
   }
+
+  .studio {
+    animation: ChangeColor 2s linear infinite;
+  }
+
+  @keyframes ChangeColor {
+    0% {
+      color: #2196f3;
+    }
+
+    100% {
+      color: #212121;
+    }
+  }
+
+  .web {
+    color: #2196f3;
+    animation: changecolor 2s linear infinite;
+  }
+
+  @keyframes change-color {
+    0% {
+      color: #2196f3;
+    }
+
+    100% {
+      color: #212121;
+    }
+
+  }
+
+  @keyframes changecolor {
+    0% {
+      color: #212121;
+    }
+
+    100% {
+      color: #2196f3;
+    }
+  }
+  
 
   .web {
     color: #2196f3;
@@ -166,30 +208,45 @@ body {
     justify-content: space-between;
   }
 
-  .project-list-item:not(:nth-child(n + 7)) {
-    margin-bottom: 30px;
-  }
 
   .project-card {
     width: 370px;
     height: 404px;
     background: #ffffff;
     border: 1px solid #eeeeee;
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+
+  .project-card:nth-child(-n+6) {
+    margin-bottom: 30px;
+  }
+
+  .thumb {
+    width: 370px;
+    height: 294px;
+    margin-bottom: 20px;
+    position: relative;
   }
 
   .project-img {
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .overlay {
     position: absolute;
-    width: 370px;
-    height: 294px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
     padding: 63px 24px;
     transform: translatey(-100%);
-  transition: transform 1s ease;
+    transition: transform 1s ease;
+    
   }
   
   .project-card:hover .overlay {
@@ -203,9 +260,7 @@ body {
     letter-spacing: 0.54px;
   }
 
-  .card-text {
-    padding: 20px 24px;
-  }
+
 
   .project-title {
     font-weight: 700;
@@ -213,6 +268,7 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
+    padding-left: 24px;
   }
 
   .project-text {
@@ -221,6 +277,7 @@ body {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
+    padding-left: 24px;
   }
   
   .footer {

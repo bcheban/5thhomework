@@ -53,11 +53,50 @@ body {
     line-height: 1.19;
     color: #212121;
     letter-spacing: 0.03em;
+    animation: change-color 2s linear infinite;
+  }
+
+  .studio {
+    animation: ChangeColor 2s linear infinite;
+  }
+
+  @keyframes ChangeColor {
+    0% {
+      color: #2196f3;
+    }
+
+    100% {
+      color: #212121;
+    }
   }
 
   .web {
     color: #2196f3;
+    animation: changecolor 2s linear infinite;
   }
+
+  @keyframes change-color {
+    0% {
+      color: #2196f3;
+    }
+
+    100% {
+      color: #212121;
+    }
+
+  }
+
+  @keyframes changecolor {
+    0% {
+      color: #212121;
+    }
+
+    100% {
+      color: #2196f3;
+    }
+  }
+
+
 
   .nav-list {
     width: 281px;
